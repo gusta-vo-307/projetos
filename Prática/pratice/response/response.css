@@ -1,0 +1,14 @@
+*{
+    background-color: #ffc87f;
+    color: black;
+}
+
+html,body{
+
+    height: 100px; /*colocar a porcentagem mais fluido */
+    width: 100%; /*deixar mais estático*/
+    max-width: 980px; /*usada para deixar o máximo de responsivo*/
+    /*usar sempre com width em 100% 
+    em porcentagem menor aplica margem no elemento*/
+
+}

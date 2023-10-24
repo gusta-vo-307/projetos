@@ -11,6 +11,8 @@
  git push -u origin main
 
  ## subindo as coisas já linkadas com a maquina 
- `git pull ` -- trazer o que está no git para a minha máquina atual
- `git push ` -- subir os arquivos
- ` git clone`-- 
+ `git pull ` --  é usado para atualizar o seu repositório local com as alterações do repositório remoto, garantindo que você tenha as versões mais recentes do código em seu ambiente de desenvolvimento.
+ 
+ `git push ` -- git push é usado para enviar suas alterações locais para um repositório remoto, garantindo que todos os envolvidos tenham acesso às últimas versões do código.
+
+ ` git clone`-- https://github.com/gusta-vo-307/projetos.git

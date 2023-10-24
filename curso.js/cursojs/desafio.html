@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <section>
+        <style>
+            body {
+                background-color: gray;
+                text-align: center;
+            }
+
+            .aprovado{
+                color: green;
+            }
+
+            .reprovado{
+                color: red;
+            }
+
+            .recuperacao{
+                color: yellow;
+            }
+
+            h1 {
+                text-align: center;
+                color: red;
+                font: arial;
+            }
+        </style>
+        <h1><strong>Situação do aluno</strong></h1>
+        <p> Insira Suas notas: </p>
+        <input type="button" id="botao" value="Entrar com notas">
+       <div id="resultado"></div>
+       <script>
+
+            var nome = window.prompt('Qual é o nome do aluno ? ');
+            window.alert('É um grande prazer ' + nome)
+
+            function exibirPrompt() {
+                var nota1 = Number(window.prompt('Primeira nota de ' + nome));
+                var nota2 = Number(window.prompt('Segunda nota de ' + nome));
+                var div = document.getElementById('resultado')
+               
+               
+                if (nota1 === null|| nota2 === null) {
+                    alert("Digite a sua nota" + nota);
+                } else {
+                    nota1 = parseFloat(nota1);
+                    nota2 = parseFloat(nota2);
+
+                    var soma = (nota1 + nota2) / 2;
+                    if (soma >= 6) {
+                        div.innerHTML = `Parabéns ${nome} você está aprovado`
+                        .querySelector('.aprovado')
+                    } else if (soma <= 6) {
+                        div.innerHTML = `${nome} você está de recuperação `;
+                        .querySelector('.recuperacao')
+                    } else {
+                        div.innerHTML = `${nome}, Infelizmente vc foi reprovado`  
+                        .querySelector('.reprovado')
+                    }
+                    
+                }
+            }
+                
+            var button = document.getElementById('botão');
+            botao.addEventListener('click', exibirPrompt)
+                
+            
+
+
+        </script>
+    </section>
+    <footer>
+        <p>&copy; Média final de notas </p>
+    </footer>
+
+</body>
+
+</html>
