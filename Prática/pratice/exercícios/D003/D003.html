@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Antes e Depois </h1>
+    </div>
+    <div>
+        <button type="button" id="clicar" onclick="clicar()">Inserir o número</button>
+        <button type="button" id="antes" onclick="antes()" >Antecessor</button>
+        <button type="button" id="depois" onclick="depois()" >Sucessor</button>
+    </div>
+
+    <script>
+        var num; 
+        function clicar(){
+             num = window.prompt('Digite um número inteiro qualquer: ')
+        }
+
+        function antes(){
+          if(num !==undefined){
+              window.alert(`Antes de ${num}, temos o número ${num - 1}`)
+          } else {
+            window.alert("Você precisa digitar um número. ")
+          }
+        
+        }
+        function depois(){
+            num = parseInt(num)
+            if(num !==undefined){
+              window.alert(`Depois de ${num}, temos o número ${num + 1}`)
+          } else {
+            window.alert("Você precisa digitar um número. ")
+          }
+        }
+        
+    </script>
+    
+</body>
+</html>
