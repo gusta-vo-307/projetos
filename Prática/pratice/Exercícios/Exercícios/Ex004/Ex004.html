@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .box{
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 350px;
+            color: #e1e1e1;
+            box-shadow: 33px 31px 8px -3px rgba(0,0,0,0.1);
+        }
+        button{
+            font-size: 16px;
+            border-radius: 10px;
+            width: 200px;
+            margin-bottom: 20px;
+            height: 50px;
+            color: aliceblue;
+            background-color: gray;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1> Exercício 004</h1>
+        <button type="button" onclick="clicar()">Começar!</button>
+        <button type="button" onclick="calcular()"> inserir número</button>
+        <section id="res">
+            <p>O resultado vai aparecer aqui</p>
+            
+        </section>
+    </div>
+    <script>
+        function clicar(){
+             alert("Seja bem vindo(a)!");
+        }
+        function calcular(){
+            let n1 = Number (window.prompt('Digite um número:'))
+            let res = document.querySelector('section#res')
+
+            res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}</p> `
+        }
+    </script>
+    
+</body>
+</html>

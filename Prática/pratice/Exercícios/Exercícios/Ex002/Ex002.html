@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                color: aliceblue;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                font-size: 30px;
+                background-color: azure;
+            }
+
+            #box{
+                background-color: black;
+                height: 250px;
+                width: 500px;
+                border-radius: 20px;
+                margin: 0 auto;
+                box-shadow: 13px 19px 16px -3px rgba(0,0,0,0.1);
+
+            }
+
+
+            button{
+                margin-top: 20px;
+                padding: 5px;
+                height: 90px;
+                width: 300px;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div  id="box" >
+            <h1> Exercício 002</h1>
+            <div>
+                <button type="button" onclick="inicio()">Clique para começar ! </button>
+            </div>
+
+        </div>
+        <script>
+        var nome;
+        function inicio(){
+           let nome = window.prompt('Digite seu nome :')
+            alert(`Olá ${nome}! É um prazer em conhecer !!`)
+        }
+    </script>
+    </body>
+</html>

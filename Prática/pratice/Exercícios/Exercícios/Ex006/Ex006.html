@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercício 006 </h1>
+    <button type="button" onclick="calcular()">Calcular média</button>
+    <section id="resultado">
+        <p>O resultado aqui...</p>
+        <p></p>
+    </section>
+    <script>
+        function calcular(){
+            let nome = prompt('Qual é o nome do aluno:')
+            let n1 = Number(prompt(`Qual é a primeira nota do aluno ${nome}`))
+            let n2 = Number(prompt(`Insira a segunda nota do aluno ${nome}`))
+            med = (n1+n2)/2
+            
+            let res = document.getElementById('resultado')
+            res.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark> </p>`
+            res.innerHTML += `<p> As notas obtidas foram <mark>${n1} e ${n2}</mark>.</p>` 
+            // o sinal += serve para manter a frase anterior na tag <p>
+            res.innerHTML += `<p> A média final do aluno <mark>${nome}</mark> foi <mark>${med}</mark>`
+        }
+    </script>
+</body>
+</html>

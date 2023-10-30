@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: gray;
+            
+        }
+        .box{
+            background-color: brown;
+            width: 350px;
+            height: auto;
+            margin: 0 auto;
+            color: aliceblue;
+            border-radius:20px ;
+            padding: 15px;
+            box-shadow: 13px 19px 16px -3px rgba(0,0,0,0.1);
+
+        }
+
+        button{
+            height: 50px;
+            width: 70%;
+            border-radius: 20px;
+            margin: auto;
+            border: rgb(255, 0, 25);
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" >
+        <h1>Exercício 003</h1>
+        <button type="button" onclick="clicar()">Clique para começar</button>
+        <section id="resultado">
+            <p> Aqui vai aparecer o resultado....</p>
+        </section>
+        <script>
+            function clicar(){
+                let nome =  prompt('Qual é o seu nome ?') 
+                document.getElementById("resultado").innerHTML = `Olá <strong>${nome}!</strong>`
+                //innerHTML fez aparecer o id:"resultado" na tag <p>.
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>
